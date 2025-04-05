@@ -1,0 +1,11 @@
+[package]
+name = "rust-template"
+description = ""
+version = "0.1.0"
+authors = ["You <you@example.com>"]
+# categories = ["wasm"]
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+ferris-says = "0.3.1"
