@@ -14,6 +14,7 @@ Some templates including `nix-env` configs.
 - `rust-wasm`
 - `gtk-4-rust`
 - `tauri`
+- `wp-env`
 
 ---
 
