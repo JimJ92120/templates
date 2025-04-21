@@ -1,0 +1,10 @@
+# https://rust-lang.github.io/rustup/overrides.html#the-toolchain-file
+[toolchain]
+channel = "nightly-2024-12-25"
+components = [
+  "rustfmt",
+  "rustc-dev",
+  "clippy"
+]
+targets = []
+profile = "default"
