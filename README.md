@@ -12,6 +12,8 @@ Some templates including `nix-env` configs.
 - `php`
 - `rust`
 - `rust-wasm`
+- `gtk-4-rust`
+- `tauri`
 
 ---
 
