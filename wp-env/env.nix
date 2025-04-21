@@ -4,6 +4,7 @@ pkgs.mkShell {
     nodejs
     yarn
     docker
+    php84Packages.composer
   ];
 
   buildInputs = with pkgs;[
