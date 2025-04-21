@@ -1,8 +1,8 @@
 # cargo-features = ["edition"]
 
 [package]
-name = "mandelbrot"
-description = "A Mandelbrot set representation using WebAssembly with Rust and rendered with WebGL 2."
+name = "rust-wasm"
+description = ""
 version = "0.1.0"
 authors = ["You <you@example.com>"]
 categories = ["wasm"]

@@ -1,10 +1,22 @@
+# https://nixos.wiki/wiki/Rust
 with import <nixpkgs> {};
 
 let
-  overrides = (builtins.fromTOML (builtins.readFile ./rust-toolchain.toml));
+  # overrides = (builtins.fromTOML (builtins.readFile ./lib/rust-toolchain.toml));
   libPath = with pkgs; lib.makeLibraryPath [
     # 
   ];
+
+  rustVersion = "latest";
+  
+  rust_overlay = import (builtins.fetchTarball "https://github.com/oxalica/rust-overlay/archive/master.tar.gz");
+  pkgs = import <nixpkgs> { overlays = [ rust_overlay ]; };
+  rust = pkgs.rust-bin.stable.${rustVersion}.default.override {
+    extensions = [
+      "rust-src" # for rust-analyzer
+      "rust-analyzer"
+    ];
+  };
 in
 stdenv.mkDerivation {
   name = "node";
@@ -13,9 +25,10 @@ stdenv.mkDerivation {
     clang
     llvmPackages.bintools
     #
+    rust
     rustc
     cargo
-    rustup
+    rustup # to run $rustup update stable
     #
     wasm-pack
     #
@@ -23,7 +36,7 @@ stdenv.mkDerivation {
     yarn
   ];
 
-  RUSTC_VERSION = overrides.toolchain.channel;
+  # RUSTC_VERSION = overrides.toolchain.channel;
   LIBCLANG_PATH = pkgs.lib.makeLibraryPath [ pkgs.llvmPackages_latest.libclang.lib ];
   shellHook = ''
     export PATH=$PATH:''${CARGO_HOME:-~/.cargo}/bin

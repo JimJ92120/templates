@@ -1,4 +1,4 @@
-# mandelbrot
+# rust-wasm
 
 A template for WebAssembly with `rust` and `typescript`.
 
@@ -71,6 +71,10 @@ yarn build:wasm
 
 ```sh
 nix-shell env.nix
+
+# e.g code, codium
+# so `rust` env is set for `vscode` and e.g `rust-lang.rust-analyzer`
+code
 ```
 
 ---
