@@ -18,10 +18,7 @@
     "development": {
       "port": 3000,
       "phpmyadminPort": 3001,
-      "themes": [
-        "WordPress/theme-experiments",
-        "WordPress/theme-twentytwentyfive"
-      ],
+      "themes": ["WordPress/theme-experiments", "WordPress/twentytwentyfive"],
       "config": {
         "WP_DEBUG": true,
         "SCRIPT_DEBUG": true,
