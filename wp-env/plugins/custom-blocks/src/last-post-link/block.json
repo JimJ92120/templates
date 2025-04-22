@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "examples/last-post-link",
+	"version": "0.1.0",
+	"title": "Example: last post",
+	"category": "widgets",
+	"icon": "megaphone",
+	"description": "Dynamic block example",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "last-post",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

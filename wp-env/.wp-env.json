@@ -2,8 +2,8 @@
   "$schema": "https://schemas.wp.org/trunk/wp-env.json",
   "core": null,
   "phpVersion": null,
-  "plugins": ["./plugins/plugin-test", "./plugins/plugin-test-2"],
-  "themes": ["./themes/theme"],
+  "plugins": ["./plugins/admin-app", "./plugins/custom-blocks"],
+  "themes": ["./themes/full-site-editing"],
   "config": {
     "WP_HOME": "http://localhost",
     "WP_SITEURL": "http://localhost",
@@ -18,7 +18,6 @@
     "development": {
       "port": 3000,
       "phpmyadminPort": 3001,
-      "themes": ["WordPress/theme-experiments", "WordPress/twentytwentyfive"],
       "config": {
         "WP_DEBUG": true,
         "SCRIPT_DEBUG": true,
@@ -28,7 +27,6 @@
     "tests": {
       "port": 4000,
       "phpmyadminPort": 4001,
-      "plugins": ["WordPress/classic-editor"],
       "config": {
         "WP_DEBUG": false,
         "SCRIPT_DEBUG": false,
