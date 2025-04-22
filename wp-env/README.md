@@ -92,5 +92,6 @@ See `wp-env` documentation to map other directories and add plugins and themes t
 - [`plugins documentation`](https://developer.wordpress.org/plugins/)
 - [`themes documentation`](https://developer.wordpress.org/themes/getting-started/)
 - [`create blocks documentation`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/)
+- [`dynamic blocks documentation`](https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/creating-dynamic-blocks/)
 - [`@wordpress/scripts`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/)
 - [`react app in WP`](https://developer.wordpress.org/block-editor/how-to-guides/data-basics/)
