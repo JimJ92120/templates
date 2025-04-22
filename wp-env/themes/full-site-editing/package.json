@@ -1,5 +1,5 @@
 {
-  "name": "admin-app",
+  "name": "full-site-editing",
   "version": "0.1.0",
   "main": "build/index.js",
   "scripts": {

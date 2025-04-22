@@ -1,5 +1,5 @@
 {
-  "name": "wordpress-plugin-allow-models-upload",
+  "name": "wp-env",
   "version": "0.1.0",
   "scripts": {
     "wp-env": "wp-env",

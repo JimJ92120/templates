@@ -23,7 +23,9 @@ function create_block_todo_list_block_init() {
 		$args = array();
 
 		// bind render_callback for dynamic block
-		// !!! `render`: `file:./render.php` not working
+		// to:
+		// - check if `block.json` has `render` attribute
+		// - str_replace($block_name, "-", "_") for `render_callback()` method
 		if ( "last-post-link" === $block_type ) {
 			require_once  __DIR__ . "/build/{$block_type}/render.php";
 

@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom";
-import "./style.css";
+import "./style.scss";
 
-function MyFirstApp() {
+function AdminApp() {
   return (
     <div>
       <HelloWorld />
@@ -20,9 +20,9 @@ function HelloWorld() {
 window.addEventListener(
   "load",
   function () {
-    const root = createRoot(document.getElementById("my-first-gutenberg-app"));
+    const root = createRoot(document.getElementById("admin-app"));
 
-    root.render(<MyFirstApp />);
+    root.render(<AdminApp />);
   },
   false
 );
