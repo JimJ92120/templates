@@ -1,0 +1,102 @@
+.nemo-window {
+  .primary-toolbar {
+    background-color: $background_color;
+    border-bottom: 1px solid $background_color;
+
+    entry {
+      min-height: 0;
+      margin: 0;
+    }
+
+    > toolitem > .linked > button.image-button {
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    button {
+      .text-button {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        &:hover,
+        &:active,
+        &:checked {
+          color: $primary_color;
+        }
+
+        &:disabled {
+          color: $secondary_color;
+        }
+
+        &:backdrop {
+          color: $secondary_color;
+        }
+      }
+
+      &:not(.text-button):not(.image-button) {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+
+    .path-bar.linked {
+      &:not(.vertical) {
+        > button {
+          border: none;
+          border-radius: 0;
+          margin-left: 1px;
+          margin-right: 1px;
+
+          &:checked {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  scrolledwindow.frame {
+    border-style: none;
+
+    .view:not(:selected) {
+      background-color: transparent;
+    }
+  }
+
+  .nemo-inactive-pane {
+    .view:not(:selected) {
+      background-color: $secondary_color;
+    }
+
+    widget.entry {
+      border-radius: 6px;
+      background-color: $background_color;
+    }
+
+    > notebook {
+      border-radius: 0;
+    }
+  }
+
+  .places-treeview {
+    -nemoplacestreeview-disk-full-bg-color: #605f53;
+    -nemoplacestreeview-disk-full-fg-color: #7daea3;
+    -nemoplacestreeview-disk-full-bar-width: 2px;
+    -nemoplacestreeview-disk-full-bar-radius: 0;
+    -nemoplacestreeview-disk-full-bottom-padding: 1px;
+    -nemoplacestreeview-disk-full-max-length: 80px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  // .menubar,
+  .nemo-places-sidebar {
+    @include secondary-background-gradient;
+
+    background-color: $background_color;
+  }
+
+  button:hover {
+    @include primary-background-gradient;
+  }
+}

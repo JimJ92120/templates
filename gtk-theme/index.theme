@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=HyrplandCustom
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=HyrplandCustom
+MetacityTheme=HyrplandCustom
+CursorTheme=Cursors-Win10OS
+ButtonLayout=close,minimize,maximize:
+X-Ubuntu-UseOverlayScrollbars=true

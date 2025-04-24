@@ -1,0 +1,39 @@
+$variant: "dark";
+
+@import "./colors";
+@import "./Adwaita/colors";
+@import "./mixins";
+
+/** override */
+$text_color: $primary_color;
+$selected_fg_color: $primary_color;
+$fg_color: $primary_color;
+$insensitive_fg_color: $primary_color;
+$backdrop_insensitive_color: $primary_color;
+
+$base_color: $background_color;
+$bg_color: $background_color;
+$insensitive_bg_color: $background_color;
+$selected_bg_color: $background_color;
+$backdrop_bg_color: $background_color;
+$backdrop_base_color: $background_color;
+
+$insensitive_borders_color: $background_color;
+$selected_borders_color: $background_color;
+$borders_color: $background_color;
+$alt_borders_color: $secondary_color;
+
+$link_color: $dark_color;
+
+// $warning_color: #f57900;
+// $error_color: #cc0000;
+// $success_color: if($variant == "light", #33d17a, darken(#33d17a, 10%));
+// $destructive_color: if($variant == "light", #e01b24, darken(#e01b24, 10%));
+
+@import "./Adwaita/drawing";
+@import "./Adwaita/common";
+@import "./Adwaita/colors-public";
+
+@import "./common";
+@import "./apps/nemo";
+@import "./apps/chromium";
