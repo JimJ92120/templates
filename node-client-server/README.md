@@ -1,4 +1,4 @@
-# nixos-raspberry-pi-camera-feed
+# node-client-server
 
 ...
 
